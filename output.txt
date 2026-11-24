@@ -1,0 +1,46 @@
+=======================================================
+ PART 1: CONSUMPTION ANALYSIS
+=======================================================
+Period            : 01 Jan 2023 to 31 Dec 2025 (1096 days)
+Total consumption : 17,085 kWh
+Average per day   : 15.59 kWh
+Peak day          : 07 Jul 2024 (39.0 kWh)
+Lowest day        : 08 Dec 2023 (6.2 kWh)
+Weekday vs weekend: 15.01 vs 17.03 kWh/day
+Temp correlation  : 0.80
+Estimated bill    : Rs 111,053 (at Rs 6.5/unit)
+
+Yearly consumption (kWh):
+  2023: 5,549
+  2024: 5,668
+  2025: 5,868
+
+Top 3 highest months:
+  Jul 2025: 966 kWh
+  Jul 2024: 904 kWh
+  Jul 2023: 884 kWh
+
+=======================================================
+ PART 2: FORECASTING
+=======================================================
+Model                    MAE    RMSE   MAPE %
+Linear Regression       3.14    3.80    27.49
+Random Forest           1.07    1.33     9.15
+
+Best model: Random Forest
+
+Next 30 days (01 Jan to 30 Jan 2026):
+  Forecast total  : 334 kWh
+  Forecast daily  : 11.13 kWh
+  Estimated bill  : Rs 2,171
+
+First 7 forecast days:
+  Thu 01 Jan 2026: 10.12 kWh
+  Fri 02 Jan 2026: 10.93 kWh
+  Sat 03 Jan 2026: 13.06 kWh
+  Sun 04 Jan 2026: 12.45 kWh
+  Mon 05 Jan 2026: 10.33 kWh
+  Tue 06 Jan 2026: 10.34 kWh
+  Wed 07 Jan 2026: 9.97 kWh
+
+Charts saved in charts/ | Forecast saved to data/forecast_next_30_days.csv
